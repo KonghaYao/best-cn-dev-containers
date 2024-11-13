@@ -1,5 +1,7 @@
-apt update 
-apt install -y curl 
+apt update
+apt install ca-certificates -y
+apt install curl -y
 apt install git -y
 apt install build-essential -y
-apt clean
+apt install python3-pip -y
+apt install unzip -y
