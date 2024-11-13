@@ -33,7 +33,8 @@
 
 ```bash
 docker build . -t best-cn-dev-containers
-docker run -it -name my-container best-cn-dev-containers
+docker run -it --name my-container best-cn-dev-containers
+docker exec -it  my-container /bin/bash
 ```
 
 可以使用一键初始化其他语言的脚本直接安装，省心省力，比如下面这几位,
