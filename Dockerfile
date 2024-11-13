@@ -3,10 +3,8 @@ FROM ubuntu
 
 WORKDIR /app
 
-COPY . . 
-RUN sh init-linux.sh
-
-# 安装 nodejs
-RUN sh init-nodejs.sh
+COPY init /init
+RUN sh /init/linux.sh
+RUN sh /init/nodejs.sh
 
 CMD ['/bin/bash']
