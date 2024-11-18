@@ -8,6 +8,6 @@ COPY init /init
 RUN sh /init/linux.sh
 RUN sh /init/nodejs.sh
 COPY init/pip.conf /root/.pip/pip.conf
-COPY init/cargo.conf /root/.cargo/config
+COPY init/cargo.conf /root/.cargo/config.toml
 
 CMD ["/bin/bash"]
