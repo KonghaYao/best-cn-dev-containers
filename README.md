@@ -23,7 +23,7 @@
     -   [ ] MacOS M 系列芯片的容器无法运行
 -   [x] ⬇️ Rust
     -   [x] RsProxy 源
--   [ ] ✋ Golang
+-   [x] ⬇️ Golang
 -   [ ] ✋ Java
 -   [ ] ✋ Docker（docker 里面跑 docker）
 
@@ -43,4 +43,5 @@ docker exec -it  my-container /bin/bash
 . /init/rust.sh
 . /init/deno.sh
 . /init/bun.sh
+. /init/go.sh
 ```
